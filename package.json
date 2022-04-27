@@ -1,0 +1,20 @@
+{
+  "name": "cs50x-in-node",
+  "version": "0.0.1",
+  "description": "Cs50x projects, written in nodejs",
+  "main": "server.js",
+  "scripts": {
+    "start": ""
+  },
+  "dependencies": {},
+  "engines": {
+    "node": "16.x"
+  },
+  "repository": {
+    "url": "https://github.com/TasfiqulTapu/cs50x-in-nodejs"
+  },
+  "license": "none",
+  "keywords": [
+    "cs50"
+  ]
+}
