@@ -1,12 +1,15 @@
 {
   "name": "cs50x-in-node",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Cs50x projects, written in nodejs",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "start": ""
   },
-  "dependencies": {},
+  "dependencies": {
+    "inquirer": "^8.2.2",
+    "nanospinner": "^1.1.0"
+  },
   "engines": {
     "node": "16.x"
   },
