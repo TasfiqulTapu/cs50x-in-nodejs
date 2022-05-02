@@ -32,8 +32,11 @@ async function getProject() {
     .then((answers) => {
       spinner = createSpinner("Looking into it").start();
       setTimeout(() => {
-        spinner.success({text: `please input: \n node ${week}/${answers["project"]}`, mark: ":)", color: "cyan"});
-       // spinner.stop()
+       // spinner.success({text: `please input: \n node ${week}/${answers["project"]}`, mark: ":)", color: "cyan"});
+       spinner.success({text: `success`});
+        const func = require(`./${week}/${answers["project"]}/index.js`)
+        func();
+        // spinner.stop()
       }, 1000);
     });
 }

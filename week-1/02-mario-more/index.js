@@ -3,6 +3,7 @@ const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
+module.exports = ask;
 function ask() {
   rl.question("Height:", (n) => {
    // rl.close();

@@ -1,15 +1,18 @@
-//part 01
-console.log("hello, world");
+module.exports = main 
+function main(){
+  //part 01
+  console.log("hello, world");
 
-//part 02
-const readline = require("readline");
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-})
+  //part 02
+  const readline = require("readline");
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
 
-rl.question("What's your name? ", (name)=>{
-  name = name.trim();
-  console.log(`hello, ${name}`);
-  rl.close();
-})
+  rl.question("What's your name? ", (name) => {
+    name = name.trim();
+    console.log(`hello, ${name}`);
+    rl.close();
+  });
+};main()
