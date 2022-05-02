@@ -5,6 +5,8 @@ const rl = readline.createInterface({
 });
 
 //not my proudest work, but gotta make do 
+module.exports = main;
+function main(){
 let num; 
 getNum();
 function getNum(){
@@ -43,4 +45,4 @@ function validateNum(x){
   process.exit(0)
   //console.log(sum)
 }
-
+}; main();

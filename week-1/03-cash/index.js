@@ -5,7 +5,7 @@ const rl = readline.createInterface({
 });
 
 //not my proudest work, but gotta make do
-
+module.exports = getCents;
 getCents()
 let cents;
 function getCents(){
