@@ -1,18 +1,11 @@
-module.exports = main 
-function main(){
+const getInput = require("../../getInput.js");
+module.exports = main;
+async function main() {
   //part 01
   console.log("hello, world");
 
   //part 02
-  const readline = require("readline");
-  const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-  });
-
-  rl.question("What's your name? ", (name) => {
-    name = name.trim();
-    console.log(`hello, ${name}`);
-    rl.close();
-  });
-};main()
+  let name = await getInput("What's your name? ");
+  console.log(`hello, ${name}`);
+  process.exit();
+};
