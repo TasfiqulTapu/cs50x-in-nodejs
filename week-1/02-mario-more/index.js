@@ -5,7 +5,7 @@ async function main() {
   let height;
   do {
     height = parseInt(await getInput("Height: "));
-  } while (!height || height >= 8 || height <= 1 || typeof height !== "number");
+  } while (!height || height > 8 || height < 1 || typeof height !== "number");
   generateStaircase(height);
   process.exit()
 }
