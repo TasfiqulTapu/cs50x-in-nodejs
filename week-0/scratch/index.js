@@ -1,1 +1,1 @@
-console.log("that was dumb");
+console.log("it's dumb");
