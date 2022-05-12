@@ -5,6 +5,7 @@ async function main() {
   console.log("hello, world");
 
   //part 02
+  // should be self-explanatory
   let name = await getInput("What's your name? ");
   console.log(`hello, ${name}`);
   process.exit();
