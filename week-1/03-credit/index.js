@@ -1,8 +1,7 @@
-
 const getInput = require("../../getInput.js");
-
 //not my proudest work, but gotta make do
 module.exports = main;
+
 async function main() {
   let card = await getNum();
   let type = validateCard(card);

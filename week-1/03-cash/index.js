@@ -20,6 +20,8 @@ async function getCents() {
 function getCoinAmount(nCent) {
   let total = 0;
   let coins = [25, 10, 5, 1];
+  // this might be the most efficient solution
+  // uses O(4) time complexity
   for (let i = 0; i < coins.length; i++) {
     total += Math.floor(nCent / coins[i]);
     nCent -= Math.floor(nCent / coins[i]) * coins[i];
