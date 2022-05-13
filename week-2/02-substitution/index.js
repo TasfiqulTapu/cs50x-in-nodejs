@@ -16,12 +16,17 @@ async function main() {
   process.exit();
 }
 
+// ASCII code -> Character
 function chr(ord) {
   return String.fromCharCode(ord);
 }
+// Character -> ASCII code
 function ord(chr) {
   return chr.charCodeAt(0);
 }
+
+// parameter 0: key (26 character long string)
+// parameter 1: character that will be mapped to particular key
 function substitutionCipher(k, c) {
   c = ord(c);
   if (c >= 65 && c <= 90) {

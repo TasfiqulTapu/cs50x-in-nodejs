@@ -18,12 +18,17 @@ async function main() {
   process.exit()
 }
 
+// ASCII code -> Character
 function chr(ord) {
   return String.fromCharCode(ord);
 }
+// Character -> ASCII code
 function ord(chr) {
   return chr.charCodeAt(0);
 }
+
+// parameter 0: key 
+// parameter 1: character ( only a-z and A-Z are changed, rest are returned as is )
 function caeserCipher(k, c) {
   c = ord(c);
   if (c >= 65 && c <= 90) {
