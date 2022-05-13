@@ -1,6 +1,6 @@
 {
   "name": "cs50x-in-node",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "Cs50x projects, written in nodejs",
   "main": "index.js",
   "scripts": {

@@ -27,6 +27,8 @@ function countSentences(x) {
   let arr = x.match(/\?|\.|!/gm);
   return arr.length;
 }
+// parameter 0: number of letters per 100 words
+// parameter 1: number of sentences per 100 words 
 function countReadability(l, s) {
   let index = 0.0588 * l - 0.296 * s - 15.8;
   let i = Math.round(index);
