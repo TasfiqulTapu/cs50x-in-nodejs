@@ -7,8 +7,9 @@ class Candidate {
     this.votes = votes;
   }
 }
-
+// stores the Candidate objects used later to assign votes to 
 let candidates = [];
+
 async function main() {
   let maxCandidates = 9;
   let cInput = await getInput("Candidates: ");
